@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "TPc+oUiBSEm1Wpk4TYog1kaOrl9zm7c8OzJ0613WttE=",
+  "Source": "CSharpHospitalREST",
+  "BasePath": "_content/CSharpHospitalREST",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="continueStoreCovid19ReportSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <propertyGroup description="toJsonRequest">
+        <property name="messageType" scope="axis2" type="STRING" action="set" value="application/json"/>
+        <property name="DISABLE_CHUNKING" scope="axis2" type="STRING" action="set" value="true"/>
+    </propertyGroup>
+    <store messageStore="rabbitmqStore"/>
+    <drop/>
+</sequence>

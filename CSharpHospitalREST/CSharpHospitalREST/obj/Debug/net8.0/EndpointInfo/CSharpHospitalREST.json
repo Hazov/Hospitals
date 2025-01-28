@@ -1,0 +1,188 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CSharpHospitalREST",
+    "version": "1.0"
+  },
+  "paths": {
+    "/patients": {
+      "get": {
+        "tags": [
+          "Patients"
+        ],
+        "operationId": "GetPatients",
+        "parameters": [
+          {
+            "name": "disease",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Patient"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Patient"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Patient"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Disease": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientDiseases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PatientDisease"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Medicament": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientDiseases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PatientDisease"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Patient": {
+        "required": [
+          "birthDate"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "middleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "type": "boolean"
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "patientDiseases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PatientDisease"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PatientDisease": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "patientId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "patient": {
+            "$ref": "#/components/schemas/Patient"
+          },
+          "diseaseId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "disease": {
+            "$ref": "#/components/schemas/Disease"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fatalOutcome": {
+            "type": "boolean"
+          },
+          "medicaments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Medicament"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

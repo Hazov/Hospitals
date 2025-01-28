@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="storeCovid19ReportSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log category="INFO" level="simple"/>
+    <filter regex=".*xml.*" source="get-property('transport' ,'Content-Type')">
+        <then>
+            <property name="uri.var.reportResource" scope="default" type="STRING" value="SOAPcovid19report"/>
+        <sequence key="continueStoreCovid19ReportSeq" />
+        </then>
+        <else>
+            <property name="uri.var.reportResource" scope="default" type="STRING" value="covid19report"/>
+        <sequence key="continueStoreCovid19ReportSeq" />
+        </else>
+    </filter>
+</sequence>

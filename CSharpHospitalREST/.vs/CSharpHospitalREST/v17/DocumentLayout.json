@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\proj\\gazprom\\CSharpHospitalREST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\service\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\service\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\service\\esbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\service\\esbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\jobs\\covid19esbsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\jobs\\covid19esbsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\mappingprofiles\\patientmapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\mappingprofiles\\patientmapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\service\\restservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\service\\restservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\models\\disease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\models\\disease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\models\\patientdisease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\models\\patientdisease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\csharphospitalrest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\csharphospitalrest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|d:\\proj\\gazprom\\csharphospitalrest\\csharphospitalrest\\csharphospitalrest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{E13E8105-5B2E-446C-BAB5-FF967D26363B}|CSharpHospitalREST\\CSharpHospitalREST.csproj|solutionrelative:csharphospitalrest\\csharphospitalrest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EsbService.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Service\\EsbService.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Service\\EsbService.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Service\\EsbService.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Service\\EsbService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T23:41:48.18Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PatientMapProfile.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\MappingProfiles\\PatientMapProfile.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\MappingProfiles\\PatientMapProfile.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\MappingProfiles\\PatientMapProfile.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\MappingProfiles\\PatientMapProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T22:38:47.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Service\\PatientService.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Service\\PatientService.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Service\\PatientService.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Service\\PatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T05:34:03.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Models\\Patient.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Models\\Patient.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:50:37.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RestService.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Service\\RestService.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Service\\RestService.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Service\\RestService.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Service\\RestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T23:37:06.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Covid19EsbSender.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Jobs\\Covid19EsbSender.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Jobs\\Covid19EsbSender.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Jobs\\Covid19EsbSender.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Jobs\\Covid19EsbSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T21:41:49.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Program.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Program.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Program.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T19:21:59.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Controllers\\PatientsController.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Controllers\\PatientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T18:43:42.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CSharpHospitalREST.csproj",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalRest\\CSharpHospitalREST\\CSharpHospitalREST.csproj",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\CSharpHospitalREST.csproj",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalRest\\CSharpHospitalREST\\CSharpHospitalREST.csproj",
+              "RelativeToolTip": "CSharpHospitalREST\\CSharpHospitalREST.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-29T11:26:41.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientDisease.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Models\\PatientDisease.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Models\\PatientDisease.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Models\\PatientDisease.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Models\\PatientDisease.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T10:47:23.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Disease.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Models\\Disease.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Models\\Disease.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Models\\Disease.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\Models\\Disease.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T19:24:34.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CSharpHospitalREST\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-28T20:02:31.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\appsettings.json",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\appsettings.json",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\appsettings.json",
+              "RelativeToolTip": "CSharpHospitalREST\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-28T19:44:35.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\WeatherForecast.cs",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\WeatherForecast.cs",
+              "RelativeToolTip": "CSharpHospitalREST\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T19:22:01.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CSharpHospitalREST.http",
+              "DocumentMoniker": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\CSharpHospitalREST.http",
+              "RelativeDocumentMoniker": "CSharpHospitalREST\\CSharpHospitalREST.http",
+              "ToolTip": "D:\\proj\\gazprom\\CSharpHospitalREST\\CSharpHospitalREST\\CSharpHospitalREST.http",
+              "RelativeToolTip": "CSharpHospitalREST\\CSharpHospitalREST.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-28T20:02:42.081Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

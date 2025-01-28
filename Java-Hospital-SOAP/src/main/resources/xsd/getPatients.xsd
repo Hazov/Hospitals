@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.hazov.ru/javahospitalsoap"
+           targetNamespace="http://www.hazov.ru/javahospitalsoap" elementFormDefault="qualified">
+
+    <xs:element name="getPatientsRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="diseaseName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getPatientsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tns:patient" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="patient">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="firstName" type="xs:string"/>
+                <xs:element name="lastName" type="xs:string"/>
+                <xs:element name="middleName" type="xs:string"/>
+                <xs:element name="birthDate" type="xs:dateTime"/>
+                <xs:element ref="tns:diseaseInfo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="diseaseInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="diseaseName" type="xs:string"/>
+                <xs:element name="startDate" type="xs:dateTime"/>
+                <xs:element name="endDate" type="xs:dateTime"/>
+                <xs:element name="fatalOutcome" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="IEP-ForCovid19Report-inboundSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log category="INFO" level="simple"/>
+    <property name="FORCE_SC_ACCEPTED" scope="default" type="STRING" value="true"/>
+    <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
+    <sequence key="storeCovid19ReportSeq"/>
+    <respond/>
+</sequence>

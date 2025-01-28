@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="Covid19ReportPolling" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <propertyGroup description="covid19UrlParams">
+                <property name="uri.var.diseaseName" scope="default" type="STRING" action="set" value="covid19"/>
+                <property name="uri.var.date" scope="default" type="STRING" expression="get-property('SYSTEM_DATE', 'yyyy-MM-dd')" action="set"/>
+            </propertyGroup>
+            <call blocking="true" description="Polling python hospital">
+                <endpoint key="EP-python-hospital"/>
+            </call>
+            <sequence key="storeCovid19ReportSeq"/>
+            <respond/>
+        </inSequence>
+        <faultSequence>
+            <log category="INFO" level="simple"/>
+            <drop/>
+        </faultSequence>
+    </target>
+</proxy>

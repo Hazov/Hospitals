@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.hazov.ru/javahospitalsoap"
+           targetNamespace="http://www.hazov.ru/javahospitalsoap" elementFormDefault="qualified">
+
+
+    <xs:element name="Covid19PatientsReport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="covid19Patients" type="tns:Covid19Patient" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="Covid19Patient">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="middleName" type="xs:string"/>
+            <xs:element name="birthDate" type="xs:dateTime"/>
+            <xs:element name="diseaseFatalOutCome" type="xs:boolean"/>
+            <xs:element name="diseaseStartDate" type="xs:dateTime"/>
+            <xs:element name="diseaseEndDate" type="xs:dateTime"/>
+            <xs:element name="medicaments" type="tns:Medicament" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="Medicament">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>

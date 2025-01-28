@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: API-CSharp-hospital
+  description: API Definition of API-CSharp-hospital
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/api-csharp-Hospital
+paths:
+  /patients:
+    get:
+      responses:
+        default:
+          description: Default response

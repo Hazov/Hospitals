@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api-csharp-Hospital" name="API-CSharp-hospital" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/patients">
+        <inSequence>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+</api>
