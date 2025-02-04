@@ -3,4 +3,7 @@
   <component name="Black">
     <option name="sdkName" value="C:\Users\nikolay\miniconda3" />
   </component>
+  <component name="ExtraIDETweaksSettingsProject">
+    <option name="enableOpenEditorsShowRecentFiles" value="false" />
+  </component>
 </project>

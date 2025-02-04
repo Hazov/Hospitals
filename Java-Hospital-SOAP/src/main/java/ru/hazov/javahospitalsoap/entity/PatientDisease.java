@@ -21,7 +21,6 @@ import java.util.List;
 }
 )
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 @Entity
 public class PatientDisease {

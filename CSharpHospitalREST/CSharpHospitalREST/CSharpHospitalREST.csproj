@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
     <PackageReference Include="EntityFramework" Version="6.5.1" />
     <PackageReference Include="JsonHelper" Version="1.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
@@ -26,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="dto\order\" />
     <Folder Include="dto\patient\" />
     <Folder Include="Migrations\" />
   </ItemGroup>

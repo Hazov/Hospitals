@@ -29,6 +29,9 @@ namespace CSharpHospitalREST.config.db
                 .WithMany(m => m.PatientDiseases)
                 .UsingEntity(j => j.ToTable("PatientDiseaseMedicaments"));
 
+            modelBuilder.Entity<EOrder>()
+                .HasOne(o => o.Medicament);
+
         }
 
         public DbSet<Patient> Patients { get; set; }
@@ -36,6 +39,7 @@ namespace CSharpHospitalREST.config.db
         public DbSet<Disease> Diseases { get; set; }
 
         public DbSet<PatientDisease> PatientDiseases { get; set; }
+        public DbSet<EOrder> EOrders { get; set; }
 
 
 

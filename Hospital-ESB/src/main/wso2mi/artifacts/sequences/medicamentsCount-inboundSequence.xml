@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="medicamentsCount-inboundSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <call-template target="saga-template" onError="sagaErrorSeq">
+        <with-param name="resourceUrl" value="MedicamentsCountUrl"/>
+        <with-param name="responseWrapper" value="medicamentCounts"/>
+        <with-param name="compensationUrl" value="MedicamentsCountCompensationUrl"/>
+    </call-template>
+</sequence>

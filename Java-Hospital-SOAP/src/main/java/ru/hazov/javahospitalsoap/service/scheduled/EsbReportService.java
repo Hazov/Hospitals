@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 @EnableAsync
 @Component
 public class EsbReportService {
-    private final DiseaseRepository diseasesRepository;
+
     private final PatientMapper patientMapper;
     private final PatientDiseaseRepository patientDiseaseRepository;
     @Value("${esb.address}")
@@ -38,10 +38,9 @@ public class EsbReportService {
     private final PatientRepository patientRepository;
 
     @Autowired
-    EsbReportService(WebServiceTemplate webServiceTemplate, PatientRepository patientRepository, DiseaseRepository diseasesRepository, PatientMapper patientMapper, PatientDiseaseRepository patientDiseaseRepository) {
+    EsbReportService(WebServiceTemplate webServiceTemplate, PatientRepository patientRepository, PatientMapper patientMapper, PatientDiseaseRepository patientDiseaseRepository) {
         this.webServiceTemplate = webServiceTemplate;
         this.patientRepository = patientRepository;
-        this.diseasesRepository = diseasesRepository;
         this.patientMapper = patientMapper;
         this.patientDiseaseRepository = patientDiseaseRepository;
     }

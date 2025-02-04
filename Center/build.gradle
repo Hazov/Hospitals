@@ -26,6 +26,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '3.4.1'
+    implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: '3.3.2'
     implementation group: 'org.liquibase', name: 'liquibase-core', version: '4.31.0'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'

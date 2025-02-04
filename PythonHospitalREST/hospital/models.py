@@ -2,6 +2,7 @@ from django.db import models
 
 class Medicament(models.Model):
     name = models.CharField(max_length=100)
+    count = models.IntegerField()
     class Meta:
         db_table = 'medicament'
 
@@ -33,6 +34,10 @@ class PatientDisease(models.Model):
 
     class Meta:
         db_table = 'patientdisease'
+
+class EOrder(models.Model):
+    medicament = models.ForeignKey(Medicament, on_delete=models.CASCADE)
+    count = models.IntegerField()
 
 
 

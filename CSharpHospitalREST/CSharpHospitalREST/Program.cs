@@ -12,10 +12,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<PatientService>();
+
+builder.Services.AddSingleton<PatientService>();
 builder.Services.AddScoped<EsbService>();
 builder.Services.AddScoped<RestService>();
 builder.Services.AddScoped<DiseaseService>();
+builder.Services.AddScoped<MedicamentService>();
+builder.Services.AddScoped<EOrderService>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 

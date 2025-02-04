@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public class PatientMapper {
 
-    private final Util util;
+    Util util;
 
     @Autowired
     public PatientMapper(Util util) {

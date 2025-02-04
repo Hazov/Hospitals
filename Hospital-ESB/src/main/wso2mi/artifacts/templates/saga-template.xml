@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="saga-template" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter isMandatory="false" name="resourceUrl"/>
+    <parameter isMandatory="false" name="responseWrapper"/>
+    <sequence>
+            <payloadFactory description="prepare hospitalList" media-type="xml" template-type="default">
+    <format><hospServers></hospServers></format>
+    <args>
+    </args>
+</payloadFactory>
+<xslt description="replace body to hospitalList" key="hostpitals-servers" source="//*[local-name() = 'hospServers']">
+        </xslt>
+        <property name="resourceUrl" scope="default" type="STRING" expression="$func:resourceUrl"/>
+        <iterate   expression="//*[local-name() = 'Hospital']" sequential="true" description="hospitalList.forEach">
+        <target>
+            <sequence>
+                    <propertyGroup description="current hospital properties">
+                        <property name="currentUrl" scope="default" type="STRING" expression="//*[local-name() = get-property('resourceUrl')]" action="set"/>
+                        <property name="currentCompensationUrl" scope="default" type="STRING" expression="//*[local-name() = get-property('compensationUrl')]" action="set"/>
+                        <property name="currentName" scope="default" type="STRING" expression="//*[local-name() = 'Name']" action="set"/>
+                    </propertyGroup>
+                    <header name="To" action="set" scope="default" expression="get-property('currentUrl')" description="To"/>
+                    <call/>
+                    <class name="ru.hazov.CollectToOperationScopeMediator">
+                        <property name="itemProperty" value="compensationUrl"/>
+                        <property name="collectionProperty" value="compensationUrls"/>
+                    </class>
+                    <payloadFactory description="wrap response" media-type="json" template-type="default">
+                        <format>{"hospitalName":"$1", "response":$2}</format>
+                        <args>
+                            <arg expression="$ctx:currentName" evaluator="json"/>
+                            <arg expression="$" evaluator="json"/>
+                        </args>
+                    </payloadFactory>
+                </sequence>
+            </target>
+        </iterate>
+    <aggregate>
+        <completeCondition timeout="0">
+                <messageCount max="-1" min="-1"/>
+            </completeCondition>
+        <onComplete aggregateElementType="root" expression="json-eval($)">
+                <payloadFactory description="wrap all responses" media-type="json" template-type="default">
+                    <format>{"$1":$2}</format>
+                    <args>
+                        <arg expression="get-property('responseWrapper')" evaluator="json"/>
+                        <arg expression="$" evaluator="json"/>
+                    </args>
+                </payloadFactory>
+                <respond/>
+            </onComplete>
+        </aggregate>
+    </sequence>
+</template>

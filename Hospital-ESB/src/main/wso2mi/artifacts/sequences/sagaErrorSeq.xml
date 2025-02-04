@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="sagaErrorSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <payloadFactory description="compensationUrls to payload" media-type="xml" template-type="default">
+        <format>
+            <payload>$1</payload>
+        </format>
+        <args>
+            <arg expression="get-property('operation', 'compensationUrls')" evaluator="xml"/>
+        </args>
+    </payloadFactory>
+    <log category="INFO" level="simple"/>
+    <respond/>
+</sequence>

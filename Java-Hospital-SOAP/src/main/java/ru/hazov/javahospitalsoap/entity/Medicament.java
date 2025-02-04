@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Persistent;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 @Entity
 @Description("Лекарства")

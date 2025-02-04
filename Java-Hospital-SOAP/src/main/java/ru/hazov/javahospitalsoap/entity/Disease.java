@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 @Entity
 @Description("Болезнь")
