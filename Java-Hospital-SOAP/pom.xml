@@ -81,12 +81,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.blazebit</groupId>
-            <artifactId>blaze-persistence-entity-view-api</artifactId>
-            <version>1.6.14</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
             <version>4.30.0</version>
@@ -166,7 +160,7 @@
                     <url>jdbc:postgresql://localhost:5432/java-soap-hospital</url>
                     <username>postgres</username>
                     <password>1234</password>
-                    <outputChangeLogFile>src/main/resources/db/changelog/changeset/init.xml</outputChangeLogFile>
+                    <outputChangeLogFile>src/main/resources/db/changelog/changeset/init3.xml</outputChangeLogFile>
                 </configuration>
             </plugin>
         </plugins>

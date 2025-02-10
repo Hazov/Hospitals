@@ -1,4 +1,4 @@
-package ru.hazov.center.dto.covidreport;
+package ru.hazov.center.dto.api.in.covidreport;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import lombok.AllArgsConstructor;

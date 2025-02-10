@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 
 from hospital.models import Patient, PatientDisease, Disease, EOrder, Medicament
-from hospital.serializers import Covid19PatientSerializer, Covid19ReportSerializer, CountSer, MedicamentCountSerializer, \
+from hospital.serializers import Covid19PatientSerializer, Covid19ReportSerializer, MedicamentCountSerializer, \
     OrderMedicamentSerializer
 
 
@@ -30,6 +30,7 @@ def covid19patients(request):
 def medicament_count(request):
     params = request.GET
     madicamentName = params.get("name")
+    madicamentName = "aspirin"
     medicament = Medicament.objects.filter(name=madicamentName)
     serializer = MedicamentCountSerializer(medicament)
     return JsonResponse(serializer.data, safe=False)

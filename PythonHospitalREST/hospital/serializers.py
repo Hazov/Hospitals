@@ -30,19 +30,15 @@ class Covid19ReportSerializer(serializers.BaseSerializer):
     def to_representation(self, instance):
         return {"covid19Patients":instance.covid19Patients}
 
-class CountSer(serializers.BaseSerializer):
-    def to_representation(self, instance):
-        return {"count": instance.count}
 
 class MedicamentCountSerializer(serializers.ModelSerializer):
-
     class Meta:
-        fields = ['name, count']
+        fields = ['count']
         model = Medicament
 
 class MedicamentCountResponseSerializer(serializers.BaseSerializer):
     def to_representation(self, instance):
-        return {"medicamentCountResponse": instance.count}
+        return {"medicamentCountResponse": instance}
 
 class OrderMedicamentSerializer(serializers.ModelSerializer):
     class Meta:

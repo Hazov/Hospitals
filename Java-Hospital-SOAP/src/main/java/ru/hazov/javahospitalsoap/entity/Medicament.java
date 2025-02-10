@@ -18,4 +18,7 @@ public class Medicament {
 
     @Column
     private String name;
+
+    @Column
+    private int quantity;
 }

@@ -5,6 +5,7 @@ using CSharpHospitalREST.Service;
 using Quartz;
 using CSharpHospitalREST.Jobs;
 using System.Reflection;
+using Microsoft.AspNetCore.Authentication.Certificate;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +13,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme).AddCertificate();
 
-builder.Services.AddSingleton<PatientService>();
+builder.Services.AddScoped<PatientService>();
 builder.Services.AddScoped<EsbService>();
 builder.Services.AddScoped<RestService>();
 builder.Services.AddScoped<DiseaseService>();

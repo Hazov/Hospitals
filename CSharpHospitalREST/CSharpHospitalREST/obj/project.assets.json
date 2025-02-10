@@ -251,6 +251,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Certificate/8.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "8.0.1"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Certificate.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Certificate.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -3602,6 +3621,21 @@
         "runtimes/win-x86/native/vcruntime140.dll",
         "runtimes/win-x86/native/zlib1.dll",
         "runtimes/win-x86/native/zstd.dll"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Certificate/8.0.12": {
+      "sha512": "gmypvLBa5miSvqjFGhTCD5u329lWLC8tgOMVDGqN2veHJHeOR2LMM3ZQBehr03AihGrG2f9N9vgIwaWFEfDRVQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.certificate/8.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.AspNetCore.Authentication.Certificate.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Authentication.Certificate.xml",
+        "microsoft.aspnetcore.authentication.certificate.8.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.certificate.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -10564,6 +10598,7 @@
       "Confluent.Kafka >= 2.8.0",
       "EntityFramework >= 6.5.1",
       "JsonHelper >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.Certificate >= 8.0.12",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
@@ -10640,6 +10675,10 @@
           "JsonHelper": {
             "target": "Package",
             "version": "[1.0.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Certificate": {
+            "target": "Package",
+            "version": "[8.0.12, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

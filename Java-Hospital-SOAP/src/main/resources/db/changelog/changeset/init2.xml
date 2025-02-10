@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="nikolay (generated)" id="1737853809768-1">
+    <changeSet author="nikolay (generated)" id="1738706979279-1">
         <createTable tableName="patient_disease">
             <column autoIncrement="true" name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="patient_disease_pkey"/>
@@ -17,7 +17,7 @@
             <column name="patient_id" type="BIGINT"/>
         </createTable>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-5">
+    <changeSet author="nikolay (generated)" id="1738706979279-2">
         <createTable tableName="disease">
             <column autoIncrement="true" name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="disease_pkey"/>
@@ -26,15 +26,26 @@
             <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-6">
+    <changeSet author="nikolay (generated)" id="1738706979279-3">
+        <createTable tableName="eorder">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="eorder_pkey"/>
+            </column>
+            <column name="date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="quantity" type="INTEGER"/>
+            <column name="medicament_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="nikolay (generated)" id="1738706979279-4">
         <createTable tableName="medicament">
             <column autoIncrement="true" name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="medicament_pkey"/>
             </column>
             <column name="name" type="VARCHAR(255)"/>
+            <column name="quantity" type="INTEGER"/>
         </createTable>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-7">
+    <changeSet author="nikolay (generated)" id="1738706979279-5">
         <createTable tableName="patient">
             <column autoIncrement="true" name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="patient_pkey"/>
@@ -51,7 +62,7 @@
             <column name="middle_name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-8">
+    <changeSet author="nikolay (generated)" id="1738706979279-6">
         <createTable tableName="patient_disease_medicaments">
             <column name="patient_disease_id" type="BIGINT">
                 <constraints nullable="false"/>
@@ -61,16 +72,19 @@
             </column>
         </createTable>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-11">
+    <changeSet author="nikolay (generated)" id="1738706979279-7">
         <addForeignKeyConstraint baseColumnNames="medicaments_id" baseTableName="patient_disease_medicaments" constraintName="fkglr2gw6tb18w2b74hend6emhe" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="medicament" validate="true"/>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-12">
+    <changeSet author="nikolay (generated)" id="1738706979279-8">
         <addForeignKeyConstraint baseColumnNames="patient_id" baseTableName="patient_disease" constraintName="fkgwiynt7jqh2i7nbo84ir897gs" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="patient" validate="true"/>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-13">
+    <changeSet author="nikolay (generated)" id="1738706979279-9">
         <addForeignKeyConstraint baseColumnNames="disease_id" baseTableName="patient_disease" constraintName="fkh0e6yqphv65nlxlwu3eihn0f4" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="disease" validate="true"/>
     </changeSet>
-    <changeSet author="nikolay (generated)" id="1737853809768-14">
+    <changeSet author="nikolay (generated)" id="1738706979279-10">
         <addForeignKeyConstraint baseColumnNames="patient_disease_id" baseTableName="patient_disease_medicaments" constraintName="fkia3rv4ka72brk897s3citq2lt" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="patient_disease" validate="true"/>
+    </changeSet>
+    <changeSet author="nikolay (generated)" id="1738706979279-11">
+        <addForeignKeyConstraint baseColumnNames="medicament_id" baseTableName="eorder" constraintName="fkm6mkcb1w3ghgunxg7nxq1vyw7" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="medicament" validate="true"/>
     </changeSet>
 </databaseChangeLog>

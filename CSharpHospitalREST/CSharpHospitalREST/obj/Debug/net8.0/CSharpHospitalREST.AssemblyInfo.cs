@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpHospitalREST")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+527a977fe5e8cc4e069d45e95e689f2c1df94920")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80061e49b4bb15f0c31929cd808412f7502497c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpHospitalREST")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpHospitalREST")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

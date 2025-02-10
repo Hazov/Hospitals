@@ -1,4 +1,4 @@
-package ru.hazov.center.dto.covidreport;
+package ru.hazov.center.dto.api.in.covidreport;
 
 import java.util.Date;
 import java.util.List;

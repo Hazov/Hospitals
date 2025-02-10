@@ -6,18 +6,36 @@
                 <Hospitals>
                     <Hospital>
                         <Name>PythonHospital</Name>
-                        <MedicamentsCountUrl>http://localhost:8000/hospital/medicamentCount</MedicamentsCountUrl>
-                        <MedicamentsCountCompensationUrl>EP-python-medicament-count</MedicamentsCountCompensationUrl>
+                        <MedicamentCountResource>
+                            <Url>http://localhost:8000/hospital/medicamentCount</Url>
+                            <CompensationUrl>EP-python-medicament-count</CompensationUrl>
+                            <IsCompensationNeeded>true</IsCompensationNeeded>
+                            <CompensationPayloadTemplate>
+                                <count>${//*[local-name() = 'count']}</count>
+                            </CompensationPayloadTemplate>
+                        </MedicamentCountResource>
                     </Hospital>
                     <Hospital>
                         <Name>CSharpHospital</Name>
-                        <MedicamentsCountUrl>http://localhost:8000/hospital/medicamentCount</MedicamentsCountUrl>
-                        <MedicamentsCountCompensationUrl>EP-python-medicament-count2</MedicamentsCountCompensationUrl>
+                        <MedicamentCountResource>
+                            <Url>http://localhost:8000/hospital/medicamentCount</Url>
+                            <CompensationUrl>EP-python-medicament-count</CompensationUrl>
+                            <IsCompensationNeeded>true</IsCompensationNeeded>
+                            <CompensationPayloadTemplate>
+                                <count>${//*[local-name() = 'count']}</count>
+                            </CompensationPayloadTemplate>
+                        </MedicamentCountResource>
                     </Hospital>
                     <Hospital>
-                        <Name>JavaHospital</Name>
-                        <MedicamentsCountUrl>http://localhost:6656/hospital/medicamentCount</MedicamentsCountUrl>
-                        <MedicamentsCountCompensationUrl>EP-python-medicament-count2</MedicamentsCountCompensationUrl>
+                        <Name>PythonHospital</Name>
+                        <MedicamentCountResource>
+                            <Url>http://localhost:80400/hospital/medicamentCount</Url>
+                            <CompensationUrl>EP-python-medicament-count</CompensationUrl>
+                            <IsCompensationNeeded>true</IsCompensationNeeded>
+                            <CompensationPayloadTemplate>
+                                <count>${//*[local-name() = 'count']}</count>
+                            </CompensationPayloadTemplate>
+                        </MedicamentCountResource>
                     </Hospital>
                 </Hospitals>
             </xsl:for-each>

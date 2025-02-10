@@ -42,6 +42,27 @@ namespace CSharpHospitalREST.Migrations
                     b.ToTable("Diseases");
                 });
 
+            modelBuilder.Entity("CSharpHospitalREST.Models.EOrder", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<int?>("Count")
+                        .HasColumnType("integer");
+
+                    b.Property<long>("MedicamentId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicamentId");
+
+                    b.ToTable("EOrders");
+                });
+
             modelBuilder.Entity("CSharpHospitalREST.Models.Medicament", b =>
                 {
                     b.Property<long>("Id")
@@ -50,7 +71,11 @@ namespace CSharpHospitalREST.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
+                    b.Property<int>("Count")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -135,6 +160,17 @@ namespace CSharpHospitalREST.Migrations
                     b.HasIndex("PatientDiseasesId");
 
                     b.ToTable("PatientDiseaseMedicaments", (string)null);
+                });
+
+            modelBuilder.Entity("CSharpHospitalREST.Models.EOrder", b =>
+                {
+                    b.HasOne("CSharpHospitalREST.Models.Medicament", "Medicament")
+                        .WithMany()
+                        .HasForeignKey("MedicamentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Medicament");
                 });
 
             modelBuilder.Entity("CSharpHospitalREST.Models.PatientDisease", b =>

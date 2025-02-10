@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoint name="covidReportToCenterEP" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="post" uri-template="http://localhost:8081/{uri.var.reportResource}">
+    <http method="post" uri-template="https://localhost:8081/covid/{uri.var.reportResource}">
         <suspendOnFailure>
             <initialDuration>-1</initialDuration>
             <progressionFactor>1</progressionFactor>

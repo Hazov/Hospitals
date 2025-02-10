@@ -1,15 +1,12 @@
 package ru.hazov.javahospitalsoap.transport.dao;
 
-import com.blazebit.persistence.view.EntityView;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.hazov.javahospitalsoap.entity.Medicament;
-import ru.hazov.javahospitalsoap.entity.Patient;
 
 import java.util.ArrayList;
 import java.util.Date;

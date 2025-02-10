@@ -2,7 +2,7 @@ from django.db import models
 
 class Medicament(models.Model):
     name = models.CharField(max_length=100)
-    count = models.IntegerField()
+    count = models.IntegerField(default=0)
     class Meta:
         db_table = 'medicament'
 

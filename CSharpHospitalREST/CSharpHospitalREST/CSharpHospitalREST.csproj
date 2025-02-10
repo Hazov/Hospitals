@@ -12,6 +12,7 @@
     <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
     <PackageReference Include="EntityFramework" Version="6.5.1" />
     <PackageReference Include="JsonHelper" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Certificate" Version="8.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">

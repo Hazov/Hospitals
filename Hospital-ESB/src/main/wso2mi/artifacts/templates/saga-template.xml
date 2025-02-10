@@ -1,30 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template name="saga-template" xmlns="http://ws.apache.org/ns/synapse">
-    <parameter isMandatory="false" name="resourceUrl"/>
-    <parameter isMandatory="false" name="responseWrapper"/>
+    <parameter isMandatory="true" name="resource"/>
+    <parameter isMandatory="true" name="responseWrapper"/>
     <sequence>
             <payloadFactory description="prepare hospitalList" media-type="xml" template-type="default">
-    <format><hospServers></hospServers></format>
+    <format><hospServers></hospServers>
+            </format>
     <args>
-    </args>
-</payloadFactory>
+            </args>
+        </payloadFactory>
 <xslt description="replace body to hospitalList" key="hostpitals-servers" source="//*[local-name() = 'hospServers']">
         </xslt>
-        <property name="resourceUrl" scope="default" type="STRING" expression="$func:resourceUrl"/>
-        <iterate   expression="//*[local-name() = 'Hospital']" sequential="true" description="hospitalList.forEach">
+        <property name="resource" scope="default" type="STRING" expression="$func:resource"/>
+        <iterate expression="//*[local-name() = 'Hospital']" sequential="true" description="hospitalList.forEach">
         <target>
             <sequence>
                     <propertyGroup description="current hospital properties">
-                        <property name="currentUrl" scope="default" type="STRING" expression="//*[local-name() = get-property('resourceUrl')]" action="set"/>
-                        <property name="currentCompensationUrl" scope="default" type="STRING" expression="//*[local-name() = get-property('compensationUrl')]" action="set"/>
-                        <property name="currentName" scope="default" type="STRING" expression="//*[local-name() = 'Name']" action="set"/>
+                        <property name="currentUrl" scope="default" type="STRING" expression="//*[local-name() = get-property('resource')]/*[local-name() = 'Url']" action="set" description="currentUrl"/>
+                        <property name="isCompensationNeeded" scope="operation" type="STRING" expression="//*[local-name() = get-property('resource')]/*[local-name() = 'IsCompensationNeeded']" action="set"/>
                     </propertyGroup>
+                    <switch description="isCompensationNeeded" source="get-property('operation', 'isCompensationNeeded')">
+                        <case regex="true" >
+                            <propertyGroup>
+                                <property name="currentCompensationUrl" scope="default" type="STRING" expression="//*[local-name() = get-property('resource')]/*[local-name() = 'CompensationUrl']" action="set"/>
+                                <property name="currentCompensationPayloadTemplate" scope="default" type="STRING" expression="//*[local-name() = get-property('resource')]/*[local-name() = 'CompensationPayloadTemplate']" action="set"/>
+                            </propertyGroup>
+                        </case>
+                        <default></default>
+                    </switch>
                     <header name="To" action="set" scope="default" expression="get-property('currentUrl')" description="To"/>
                     <call/>
-                    <class name="ru.hazov.CollectToOperationScopeMediator">
-                        <property name="itemProperty" value="compensationUrl"/>
-                        <property name="collectionProperty" value="compensationUrls"/>
-                    </class>
+                    <switch description="isCompensationNeeded" source="get-property('operation', 'isCompensationNeeded')">
+                        <case regex="true" >
+                            <class description="CollectToOperationScopeMediator" name="ru.hazov.CollectToOperationScopeMediator">
+                            </class>
+                        </case>
+                        <default></default>
+                    </switch>
+                    
                     <payloadFactory description="wrap response" media-type="json" template-type="default">
                         <format>{"hospitalName":"$1", "response":$2}</format>
                         <args>

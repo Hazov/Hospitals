@@ -1,4 +1,4 @@
-package ru.hazov.center.dto.covidreport;
+package ru.hazov.center.dto.api.in.covidreport;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
